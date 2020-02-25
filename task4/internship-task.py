@@ -1,16 +1,12 @@
-
 s = input("enter your context:")
-n_list = s.split()
-other_list = []
+list_of_sentences = s.split()
+list_of_words_wo_e = []
 def has_no_e():
-    for i in n_list:
-        if "e"  not in i:
-            return other_list.append(i)
-        
+    for word in list_of_sentences:
+        if "e"  not in word:
+            list_of_words_wo_e.append(word)
+    return list_of_words_wo_e
 print(has_no_e())
-
-print("the percentage of no e words are :" , (len(other_list)/len(n_list))*100)
-        
-
-
+percentage = (len(list_of_words_wo_e)/len(list_of_sentences))*100;
+print("the percentage of no e words are: " + str(percentage) + "%")
 
