@@ -1,5 +1,3 @@
-#import codecs
-
 import os
 from  pathlib import Path 
 
@@ -29,21 +27,3 @@ if os.path.isdir(folder_path):
             file_2.write(new_data)
 else:
     print("you entered wrong file_path")
-    
-   # 1 both foder path and destination path should be user input
-   
-   # 2 to check whether the folder path and destination path is valid
-   # if valid id.dir should return true i.e it should contains files or foldders or not
-   #import os
-   #if not os.path.exists('my_folder'):
-    # os.makedirs('my_folder')
-   
-   
-    
-    
-    
-
-
-
-   
-
